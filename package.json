@@ -1,0 +1,34 @@
+{
+    "name": "orangehrm-automation-qa",
+    "version": "1.0.0",
+    "description": "Senior QA Automation Engineer Technical Test - OrangeHRM Automation",
+    "main": "index.js",
+    "scripts": {
+        "test": "cross-env TEST_ENV=qa playwright test",
+        "test:qa": "cross-env TEST_ENV=qa playwright test",
+        "test:dev": "cross-env TEST_ENV=dev playwright test",
+        "test:stage": "cross-env TEST_ENV=stage playwright test",
+        "test:ui": "cross-env TEST_ENV=qa playwright test --ui",
+        "test:debug": "cross-env TEST_ENV=qa playwright test --debug",
+        "test:api": "cross-env TEST_ENV=qa playwright test --grep @API",
+        "report": "playwright show-report",
+        "k6:login": "k6 run -e BASE_URL=https://opensource-demo.orangehrmlive.com k6/login_perf.js",
+        "k6:create": "k6 run -e BASE_URL=https://opensource-demo.orangehrmlive.com k6/create_employee_perf.js"
+    },
+    "keywords": [
+        "playwright",
+        "automation",
+        "testing",
+        "typescript"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.41.0",
+        "@types/node": "^20.11.0",
+        "cross-env": "^10.1.0",
+        "dotenv": "^16.4.1",
+        "faker": "^5.5.3",
+        "typescript": "^5.3.3"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*",
+        "k6/**/*",
+        "playwright.config.ts"
+    ]
+}
