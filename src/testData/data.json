@@ -1,0 +1,26 @@
+{
+    "messages": {
+        "success": {
+            "saved": "Successfully Saved",
+            "updated": "Successfully Updated",
+            "deleted": "Successfully Deleted"
+        },
+        "error": {
+            "required": "Required",
+            "invalid": "Invalid"
+        }
+    },
+    "labels": {
+        "personalDetails": "Personal Details",
+        "employeeId": "Employee Id",
+        "username": "Username"
+    },
+    "defaults": {
+        "firstName": "Auto",
+        "password": "Password@123"
+    },
+    "roleValidation": {
+        "module": "Admin",
+        "level": "User Management"
+    }
+}
